@@ -48,7 +48,7 @@ func TestParseMarkdown(t *testing.T) {
 		{
 			name:     "mixed content",
 			input:    "# Title\n\nParagraph here\n\n- List item",
-			expected: []MarkdownElementType{MDHeading1, MDParagraph, MDListItem},
+			expected: []MarkdownElementType{MDHeading1, MDEmptyLine, MDParagraph, MDEmptyLine, MDListItem},
 		},
 	}
 
